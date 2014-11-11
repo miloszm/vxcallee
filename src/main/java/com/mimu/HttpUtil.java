@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by miloszmuszynski on 10/11/2014.
+ * Created by mm on 10/11/2014.
  *
  *
  * TODO this class is duplicated
@@ -27,7 +27,7 @@ public class HttpUtil {
     private static List<String> sliceMultiMap(MultiMap headers){
         List<String> list = new ArrayList<>();
         for (Map.Entry<String,String> e: headers.entries()){
-            list.add("<li>" + e.getKey() + ": " + e.getValue() + "</li>\n");
+            list.add("<p>" + e.getKey() + ": " + e.getValue() + "</p>\n");
         }
         return list;
     }
