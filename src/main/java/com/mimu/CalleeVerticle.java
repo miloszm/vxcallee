@@ -12,6 +12,8 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class CalleeVerticle extends Verticle {
 
+
+    public static final int LISTENING_PORT = 9199;
     AtomicLong counter = new AtomicLong(0L);
 
     public void start() {
@@ -28,7 +30,7 @@ public class CalleeVerticle extends Verticle {
             }
         });
 
-        server.listen(9199);
+        server.listen(LISTENING_PORT);
 
     }
 
